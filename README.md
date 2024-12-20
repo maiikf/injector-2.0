@@ -16,19 +16,19 @@ Some existing injection files have been modified to meet new requirements and en
 ## Recommendations
 To fully understand the changes made, it is recommended to review the previous version of the repository. This will provide a comprehensive context and insight into the impact of the updates introduced in version 2.0.
 
-Commands:
+# Commands:
 
-##to know what current version of Solidity compiler is:
+## to know what current version of Solidity compiler is:
 solc --version
 
-##install a new version:
+## install a new version:
 solc-select install 0.8.21 
 
-##to set what version of Solidity compiler should be used:
+## to set what version of Solidity compiler should be used:
 solc-select use 0.8.21
 
-##to get a Compact AST structure of a smart contract
+## to get a Compact AST structure of a smart contract
 solc --ast-compact-json Abs5.sol > Abs5-ast.json
 
-##inject a vulnerability into a smart contract:
+## inject a vulnerability into a smart contract:
 python3 vul-1-3-1.py 3-1a_Fixed.sol
